@@ -47,6 +47,6 @@ The python program will start automatically when the Pi reboots. If needbe, to s
 
 `touch /home/pi/elephant.stop`
 
-Remember to delete the stop file otherwise it the program will autostart and then immediately stop.
+Remember to delete the stop file otherwise the program will autostart and then immediately stop.
 
 `rm /home/pi/elephant.stop`
