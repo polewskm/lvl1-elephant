@@ -1,6 +1,11 @@
 # Overview
 http://wiki.lvl1.org/Group_Project_ELEPHANT_1.0
 
+# Network
+
+* MAC Address: `7c:dd:90:36:2d:56`
+* Static IP: `10.0.0.191`
+
 # Setup
 Install required packages:
 ```
