@@ -1,5 +1,5 @@
 # Overview
-TODO
+http://wiki.lvl1.org/Group_Project_ELEPHANT_1.0
 
 # Setup
 Install required packages:
@@ -18,6 +18,7 @@ sudo pip3 install adafruit-circuitpython-servokit
 ```
 
 Configure the python script to autostart:
+
 `sudo nano /lib/systemd/system/elephant.service`
 
 With the following contents:
@@ -40,3 +41,12 @@ sudo chmod 644 /lib/systemd/system/elephant.service
 sudo systemctl daemon-reload
 sudo systemctl enable elephant.service
 ```
+
+# Control
+The python program will start automatically when the Pi reboots. If needbe, to stop the program, create the following file:
+
+`touch /home/pi/elephant.stop`
+
+Remember to delete the stop file otherwise it the program will autostart and then immediately stop.
+
+`rm /home/pi/elephant.stop`
